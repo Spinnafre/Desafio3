@@ -33,6 +33,7 @@ describe("UsersRepository", () => {
 
     const users = usersRepository.list();
 
+    // Espera que no array de usuários tenha o array contendo o usuário que acabei de criar ([user])
     expect(users).toStrictEqual(expect.arrayContaining([user]));
   });
 
